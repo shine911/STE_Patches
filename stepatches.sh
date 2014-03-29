@@ -8,8 +8,7 @@ cd ..
 echo -e $CL_BLU"Cherrypicking OMX Patch - android_frameworks_native"$CL_RST
 cd native
 git fetch https://github.com/shine911/frameworks_native kk4.4
-git cherry-pick b5586e6386282cb146ca6029dad7cb0aeabf0ef
-git cherry-pick ba08043183eec006708d15421ca05c0047a3c5fd
+git cherry-pick 47f335b1207208268d437328ba7ef148f027ffb2
 cd ..
 echo -e $CL_BLU"Cherrypicking OMX Patch - android_frameworks_base"$CL_RST
 cd base
@@ -37,4 +36,9 @@ cd packages/apps/Camera2
 git fetch https://github.com/CyanogenMod/android_packages_apps_Camera2 cm-11.0
 git cherry-pick 42067bbce2203088e09039169b0262691dd07e97
 cd ../../..
+echo -e $CL_BLU"Cherrypicking Camera fix"$CL_RST
+cd packages/services/Telephony
+git fetch https://github.com/NovaFusion/android_packages_services_Telephony cm-11.0
+git cherry-pick 6e18ab650a9bc6f4d16df7160569a6d45415e9ec
+
 echo -e $CL_BLU"DONE!"$CL_RST
