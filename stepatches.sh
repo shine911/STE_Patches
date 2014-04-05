@@ -1,9 +1,7 @@
 echo -e $CL_BLU"Cherrypicking OMX Patch - android_frameworks_av"$CL_RST
 cd frameworks/av
 git fetch https://github.com/shine911/frameworks_av kk4.4
-git cherry-pick 4cb6b2a41e0976c35687af07846b7f51ba35cbdd
-git cherry-pick 1e85ab573e7b592858cf434257d49351c206714c
-git cherry-pick bcc34dabf79696f46577c74c584309598d59bbba
+git cherry-pick 97b2d13620053eaa8b3425d3bbb486b2c4ef5a9f
 cd ..
 echo -e $CL_BLU"Cherrypicking OMX Patch - android_frameworks_native"$CL_RST
 cd native
@@ -13,7 +11,6 @@ cd ..
 echo -e $CL_BLU"Cherrypicking OMX Patch - android_frameworks_base"$CL_RST
 cd base
 git fetch https://github.com/TeamCanjica/android_frameworks_base cm-11.0
-git cherry-pick 3826055d49ec70ab3d0e130a8e444fd334806fa5
 git cherry-pick bb9d91d07fdc20c2443c9668e2f20e392b25bac4
 cd ../..
 echo -e $CL_BLU"Cherrypicking Core Patch - OMX and reboot/shutdown fix"$CL_RST
@@ -36,9 +33,9 @@ cd packages/apps/Camera2
 git fetch https://github.com/CyanogenMod/android_packages_apps_Camera2 cm-11.0
 git cherry-pick 42067bbce2203088e09039169b0262691dd07e97
 cd ../../..
-echo -e $CL_BLU"Cherrypicking Camera fix"$CL_RST
+echo -e $CL_BLU"Cherrypicking Low-incall Volume Fix"$CL_RST
 cd packages/services/Telephony
-git fetch https://github.com/NovaFusion/android_packages_services_Telephony cm-11.0
+git fetch https://github.com/shine911/packages_services_Telephony kk4.4
 git cherry-pick 6e18ab650a9bc6f4d16df7160569a6d45415e9ec
 
 echo -e $CL_BLU"DONE!"$CL_RST
