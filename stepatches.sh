@@ -37,5 +37,5 @@ echo -e $CL_BLU"Cherrypicking Low-incall Volume Fix"$CL_RST
 cd packages/services/Telephony
 git fetch https://github.com/shine911/packages_services_Telephony kk4.4
 git cherry-pick 6e18ab650a9bc6f4d16df7160569a6d45415e9ec
-
+cd ../../..
 echo -e $CL_BLU"DONE!"$CL_RST
