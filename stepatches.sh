@@ -6,7 +6,7 @@ cd ..
 echo -e $CL_BLU"Cherrypicking OMX Patch - android_frameworks_native"$CL_RST
 cd native
 git fetch https://github.com/shine911/frameworks_native kk4.4
-git cherry-pick 47f335b1207208268d437328ba7ef148f027ffb2
+git cherry-pick e7c8482bf9e3287c81962ad573d8562995a388bc
 cd ..
 echo -e $CL_BLU"Cherrypicking OMX Patch - android_frameworks_base"$CL_RST
 cd base
